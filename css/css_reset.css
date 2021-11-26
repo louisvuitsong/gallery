@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+html, body, figure, figcaption, h1, h2, h3, h4, h5, h6, p {
+    margin: 0; padding: 0;
+}
+
+body::-webkit-scrollbar{ /* 스크롤바 막대 너비 설정 */ width: 0px; }
+
+body.stopScroll {
+	overflow: hidden;
+	touch-action: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+ol, ul, li {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+    color: #000;
+
+}
+
+button {
+	border: 0;
+}
+
+img {
+	width: 100%;
+    vertical-align: top;
+
+}

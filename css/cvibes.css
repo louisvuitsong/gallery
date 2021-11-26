@@ -1,0 +1,328 @@
+@media screen and (min-width: 320px) {
+  header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+    padding: 0 5%;
+    color: #fff;
+    transition: 0.5s;
+  }
+  header.black a {
+    color: #111;
+  }
+  header.black .menu-btn {
+    color: #111;
+  }
+  header.black.active a {
+    color: #fff;
+  }
+  header.black.active .menu-btn {
+    color: #fff;
+  }
+  header a {
+    color: #fff;
+    font-weight: 500;
+  }
+  header .menu-btn {
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+    padding: 0 5%;
+  }
+  header.active {
+    color: #fff;
+  }
+  header.active .menu-btn {
+    color: #fff;
+  }
+  header p {
+    font-weight: 500;
+  }
+  header .menu-btn {
+    cursor: pointer;
+    background: transparent;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu-wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    padding: 5rem 2rem 0;
+  }
+  .menu-wrap.active {
+    opacity: 1;
+    z-index: 3;
+  }
+  .menu-wrap.active .menu-box {
+    opacity: 1;
+    transition: 0.5s 0.2s;
+  }
+  .menu-wrap .menu-box {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .menu-wrap .menu-box .menu-list {
+    margin-bottom: 2rem;
+  }
+  .menu-wrap .menu-box .menu-list .menu-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  .menu-wrap .menu-box .menu-list > ul li {
+    width: auto;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  .menu-wrap .menu-box .menu-list > ul li:hover a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+  }
+  .menu-wrap a {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .menu-wrap.active {
+    opacity: 1;
+    z-index: 3;
+  }
+  .menu-wrap.active .menu-box {
+    opacity: 1;
+    transition: 0.5s 0.2s;
+  }
+  .menu-wrap .menu-box {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-wrap .menu-box .menu-list {
+    width: 15%;
+    height: 500px;
+  }
+  .menu-wrap .menu-box .menu-list .menu-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+  .menu-wrap .menu-box .menu-list > ul li {
+    width: auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .menu-wrap .menu-box .menu-list > ul li:hover a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+  }
+  .menu-wrap a {
+    color: #fff;
+  }
+}
+main .ex-main {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+}
+main .ex-main .ex-main-top {
+  width: 100%;
+  padding: 10rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20% 0;
+}
+main .ex-main .ex-main-top .ex-main-title {
+  width: 600px;
+}
+main .ex-main .ex-main-top .ex-main-title .ex-now-txt {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main .ex-main .ex-main-top .ex-main-title .ex-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  border-bottom: 3px solid #000;
+  padding-bottom: 1rem;
+  margin: 1rem 0;
+}
+main .ex-main .ex-main-top .ex-main-title .ex-keyword {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+main .ex-main .ex-main-top .day p {
+  width: 100px;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+main .ex-main .ex-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ex-main .ex-content .ex-main-img {
+  width: 49%;
+}
+main .ex-main .ex-content .ex-main-img img {
+  height: 350px;
+}
+main .ex-main .ex-content .ex-main-text {
+  width: 51%;
+  padding: 0 20rem 0 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+}
+main .ex-main .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .ex-main .background p {
+  flex: 0 0 calc(100% / 6);
+  border-right: 1px solid #eee;
+}
+main .ex-main .background p:last-child {
+  border: 0;
+}
+main .ex-artist {
+  position: relative;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+main .ex-artist .ex-main-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20% 100px;
+}
+main .ex-artist .ex-main-top .ex-main-title {
+  width: 600px;
+}
+main .ex-artist .ex-main-top .ex-main-title .ex-now-txt {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main .ex-artist .ex-main-top .ex-main-title .ex-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  border-bottom: 3px solid #000;
+  padding-bottom: 1rem;
+  margin: 1rem 0;
+}
+main .ex-artist .ex-main-top .ex-main-title .ex-keyword {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+main .ex-artist .ex-artist-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .ex-artist .ex-artist-list ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .ex-artist .ex-artist-list ul li {
+  flex: 0 0 23%;
+  margin-right: 2%;
+  margin-bottom: 50px;
+  height: 350px;
+}
+main .ex-artist .ex-artist-list ul li:hover figure figcaption {
+  opacity: 1;
+}
+main .ex-artist .ex-artist-list ul li:hover figure figcaption::after {
+  opacity: 0.4;
+}
+main .ex-artist .ex-artist-list ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+main .ex-artist .ex-artist-list ul li a figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+main .ex-artist .ex-artist-list ul li a figure p {
+  width: 100%;
+  height: 100%;
+}
+main .ex-artist .ex-artist-list ul li a figure figcaption {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+  color: #fff;
+  z-index: 3;
+}
+main .ex-artist .ex-artist-list ul li a figure figcaption::after {
+  content: "";
+  background: #000;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}

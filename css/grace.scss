@@ -1,0 +1,138 @@
+body {
+    &::-webkit-scrollbar{ /* 스크롤바 막대 너비 설정 */ width: 0px; }
+}
+
+@import 'header';
+@import "menu";
+
+
+main {
+    max-width: 1440px;
+    margin: 200px auto;
+
+    .gallery {
+        width: 100%;
+        height: auto;
+        background-color: #eee;
+        
+        .grid-container {
+            padding: 5rem;
+            display: grid;
+            max-width: 100rem;
+            margin: 0 auto;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+            grid-auto-rows: 0.5rem;
+    
+            .grid-item {
+                border-radius: 2rem;
+                overflow: hidden;
+                visibility: hidden;
+            }
+
+            img{
+                width:100%;
+            }
+        }
+    } 
+
+    .artist {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+        .artist-logo {
+            width: 100px;
+            height: 30px;
+            transform: rotate(-90deg);
+            font-size: 2rem;
+            font-weight: 900;
+            margin-right: 5rem;
+        }
+
+        .artist-main-img {
+            width: 280px;
+            height: 400px;
+            margin-right: 5rem;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+        }
+
+        figure {
+        }
+    }
+
+    .art-goods {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                flex: 0 0 23%;
+                margin-right: 2%;
+                margin-bottom: 50px;
+
+                height: 350px;
+
+                &:hover {
+                    figure {
+                        figcaption {
+                            opacity: 1;
+
+                            &::after {
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                }
+
+                figure {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    background: #fff;
+
+
+                    p {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    figcaption {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        top: 0; left: 0;
+                        opacity: 0;
+                        transition: .5s;
+                        color: #fff;
+                        z-index: 3;
+
+                        &::after {
+                            content: "";
+                            background: #000;
+                            opacity: 0;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            position: absolute;
+                            z-index: 1;  
+                            width:100%;
+                            height:100%;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}
