@@ -132,17 +132,21 @@
                 font-weight: 900;
                 border-bottom: 2px solid #fff;
                 padding-bottom: 0.5rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
 
             }
             p {
-                // line-height: 0.8;
                 margin-bottom: 1rem;
+
+                b {
+                    font-weight: 900;
+                }
             }
 
             .ex-now {
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-end;
 
                 .day {
                     // position: absolute;
@@ -151,7 +155,7 @@
 
                     p {
                         width: 100px;
-                        line-height: 0.8;
+                        line-height: 0.5;
                         text-align: right;
                         margin-bottom: 1rem;
                     }

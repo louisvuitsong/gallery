@@ -10,10 +10,11 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd23daf45481f53608e011793d17981a"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services"></script>
     <script defer src="../js/map.js"></script>
+    <script defer src="../js/common.js"></script>
 </head>
 <body>
     <header>
-        <a href="#">CONTEENEW  GALLERY</a>
+        <a href="../index.html">CONTEENEW  GALLERY</a>
         <button class="menu-btn">MENU</button>
     </header>
     <main>
@@ -21,7 +22,7 @@
             <div class="ex-main-left">
                 <div class="ex-main-title">
                     <p class="ex-name">CONTEENEW  GALLERY</p>
-                    <p>문화컨텐츠 제품마켓 컨티뉴의 국내 최초 오프라인 갤러리</p>
+                    <p><span>문화컨텐츠 제품마켓 컨티뉴의</span><span>국내 최초 오프라인 갤러리</span></p>
                     <p>크리에이터들의 작품과 아트 굿즈를 만e나보세요.</p>
                 </div>
                 <p class="ex-main-img"><img src="../src/img/poster.jpg" alt=""></p>
@@ -114,7 +115,7 @@
             </div>
             <article>
                 <div>
-                    <div id="map" style="width:600px;height:500px;"></div>
+                    <div id="map"></div>
                     <!-- 지도타입 컨트롤 div 입니다 -->
                     <div class="custom_typecontrol radius_border">
                         <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
@@ -126,14 +127,51 @@
                         <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
                     </div>
                 </div>
-             
-                <div>
-
-                </div>
             </article>
         </section>
 
 
     </main>
+
+
+
+    <nav class="menu-wrap">
+        <ul class="menu-box">
+            <li class="menu-list">
+                <p class="menu-title">Visit</p>
+                <ul>
+                    <li><a href="pages/about.html">갤러리 소개</a></li>
+                    <li><a href="#">관람안내</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <p class="menu-title">Exhibition</p>
+                <ul>
+                    <li><a href="cvibes.html">현재전시</a></li>
+                    <li><a href="#">예정전시</a></li>
+                    <li><a href="#">지난전시</a></li>
+                    <li><a href="#">층별전시</a></li>
+                    <li><a href="gracej.html">전시 작가 보기</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <p class="menu-title">Notice</p>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <p class="menu-title">Art Shop</p>
+                <ul>
+                    <li><a href="#">아트샵 소개</a></li>
+                    <li><a href="#">작가 아트 굿즈샵</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
 </body>
 </html>

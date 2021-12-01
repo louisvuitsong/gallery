@@ -3,9 +3,194 @@
 @import 'header';
 @import "menu";
 
+@media screen and (min-width:320px) {
+    .ex-main {
+        position: relative;
+        margin: 0 auto;
+        padding: 20vh 0;
 
-main {
-        
+        .ex-main-top {
+            position: relative;
+            margin-bottom: 2rem;
+
+            .ex-main-title {
+                padding: 0 30px;
+
+                .ex-now-txt {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+                .ex-name {
+                    font-size: 1.75rem;
+                    font-weight: 900;
+                    border-bottom: 3px solid #000;
+                    padding-bottom: 1rem;
+                    margin: 1rem 0;
+                }
+                .ex-keyword {
+                    font-weight: 900;                
+                }
+            }
+
+            .day {
+                position: absolute;
+                top: -2rem;
+                right: 30px;
+
+                p {
+                    // width: 100px;
+                    margin-bottom: 1rem;
+                    text-align: right;
+                    font-weight: bold;
+                }
+            }
+        }
+        .ex-content {
+
+            .ex-main-img {
+                margin-bottom: 2rem;
+                
+                img {
+                }
+            }
+            .ex-main-text {
+                padding: 0 30px;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 2;
+
+                p {
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+                flex: 0 0 calc(100% / 6);
+                border-right: 1px solid #eee;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .ex-artist {
+        position: relative;
+        width: 100%;
+        background-color: #f2f2f2;
+        padding: 10vh 30px;
+
+        .ex-main-top {
+            margin-bottom: 2rem;
+            
+            .ex-main-title {
+
+                .ex-now-txt {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+                .ex-name {
+                    font-size: 1.75rem;
+                    font-weight: 900;
+                    border-bottom: 3px solid #000;
+                    padding-bottom: 1rem;
+                    margin: 1rem 0;
+                }
+                .ex-keyword {
+                    font-weight: 900;                
+                }
+            } 
+        }
+
+        .ex-artist-list {
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    flex: 0 0 49%;
+                    margin-bottom: 50px;
+
+                    height: 250px;
+
+                    &:hover {
+                        figure {
+                            figcaption {
+                                opacity: 1;
+    
+                                &::after {
+                                    opacity: 0.4;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        
+                        figure {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            background: #fff;
+    
+    
+                            p {
+                                width: 100%;
+                                height: 100%;
+                            }
+    
+                            figcaption {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                position: absolute;
+                                top: 0; left: 0;
+                                opacity: 0;
+                                transition: .5s;
+                                color: #fff;
+                                z-index: 3;
+    
+                                &::after {
+                                    content: "";
+                                    background: #000;
+                                    opacity: 0;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    position: absolute;
+                                    z-index: 1;  
+                                    width:100%;
+                                    height:100%;
+                                    transition: .5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
     .ex-main {
         position: relative;
         max-width: 1920px;
